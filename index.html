@@ -21,58 +21,8 @@
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
     <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-      html, body {
-        font-family: 'Cormorant Garamond', serif;
-        font-family: 'Amiri', serif;
-      }
-      body {
-        font-size: 1rem;
-      }
-      main {
-        padding: 1rem;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      section {
-        margin: 3rem 0;
-      }
-      a {
-        color: #ea4f47;
-      }
-      a.active, a:active, a:focus, a:hover {
-        color: #cf2c2e;
-        cursor: pointer;
-      }
-      .bg-primary {
-        background: #ea4f47 !important;
-      }
-      .hero {
-        /*background-image: url("https://media.licdn.com/dms/image/C4E16AQHxeaCCN3KHMA/profile-displaybackgroundimage-shrink_200_800/0?e=1583366400&v=beta&t=fTJ3Ff5w3NUUl-IfKBDP_NpUMk0jiZiaX8uji8Jprww") !important;
-          */
-        background-size: cover !important;
-        background-repeat: none !important;
-        resize: both;
-      }
-      .timeline .timeline-item .timeline-icon.icon-lg {
-        background: #ea4f47 !important;
-      }
-      .profile {
-        display: block;
-        margin: 0 auto 2rem auto;
-        max-width: 175px;
-        border-radius: 50%;
-        /*border: 3px solid #ea4f47;*/
-      }
-      .intro {
-        /*opacity: 0.75;*/
-      }
-    </style>
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
@@ -80,337 +30,356 @@
   </head>
   <body>
 
-    <!-- Header
-    <div class="hero hero-sm">
-      <div class="hero-body text-center">
-        <p></p>
-      <div class="columns">
-        <div class="column col-8 col-mx-auto">
-          <div class="divider text-center" data-content="&#10042;"></div>
+    <header class="navbar">
+      <section class="navbar-section">
+        <a href="#professional" class="btn btn-link">Professional</a>
+        <a href="#experience" class="btn btn-link">Experience</a>
+        <a href="#education" class="btn btn-link">Experience</a>
+        <a href="#contact" class="btn btn-link">Contact</a>
+      </section>
+      <section class="navbar-section">
+        <a href="mailto:ed@edwiley.com">
+          <button class="btn btn-lg bg-primary contact-btn">
+            Get in touch
+            <i class="mx-2 icon icon-mail"></i>
+          </button>
+        </a>
+      </section>
+    </header>
+
+    <div class="hero">
+      <div class="hero-filter">
+        <div class="hero-body">
+          <main>
+            <section>
+              <div class="container">
+                <div class="columns">
+                  <div class="column col-6 col-md-12">
+                    <h1 class="intro-header">
+                      <span style="font-size:45px">Edward</span><br>
+                      <span>Wiley</span>
+                      <span style="font-size:25px;text-transform:none">PhD</span>
+                    </h1>
+                    <p class="intro">
+                      Senior executive with over 25 years of
+                      building, leading, and advising world-class machine learning,
+                      AI, and data science teams at companies at stages from startup to
+                      Fortune 50.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
         </div>
-      </div>
       </div>
     </div>
-    -->
 
+    <section class="dark">
+      <div class="text-center text-uppercase tags">
+        <span>Leadership</span>
+        <span>Venture Capital</span>
+        <span>Startups</span>
+        <span>Strategy</span>
+      </div>
+    </section>
 
-    <main>
-
-
-      <section>
-        <div class="container">
-          <div class="columns">
-            <div class="column col-3 col-md-12">
-              <img class="img-responsive profile" src="https://media.licdn.com/dms/image/C4E03AQH2kfKcJkfNcw/profile-displayphoto-shrink_200_200/0?e=1583366400&v=beta&t=H4bopIjuniH4_zf7v-YDfONyQW2hgzj8E38qWeIDDyU"/>
-            </div>
-            <div class="column col-9 col-md-12">
-              <h1>Edward W. Wiley, PhD</h1>
-              <p class="intro">
-                Ed Wiley is a senior executive with over 25 years of
-                building, leading, and advising world-class machine learning,
-                AI, and data science teams at companies at stages from startup to
-                Fortune 50. An active member of the AI and data science communities, Ed
-                regularly presents at national and international conferences and workshops
-                and has been named a
-                <a class="tooltip tooltip-bottom"
-                   href="http://tinyurl.com/TopDataPros"
-                   target="_blank"
-                   data-tooltip="@WileyEd >13k followers">
-                  "Top Big Data Pro To Follow On Twitter"</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="divider text-center" data-content="&#10042;"></div>
-
-      <section>
+      <section class="content text-center" id="professional">
         <p>
 
-        <b>Key professional experiences include:</b>
+        <h3 class="text-primary py-2">Key professional experiences include:</h3>
         <ul>
-          <li>Built and led AI/Data Science practices at both Sears Holdings (NASDAQ: SHLD) and Seagate Technology (NASDAQ: STX)</li>
           <li>Former McKinsey management consultant</li>
           <li>Stanford-trained Ph.D. Statistician/Data Scientist</li>
           <li>20+ years of experience in Big Data &amp; Analytics consulting</li>
           <li>Advisor to federal governmental agencies/projects in Colombia, Germany, and U.S.</li>
           <li>Chair, Research &amp; Evaluation Methodology doctoral program at U. of Colorado</li>
+          <li>Built and led AI/Data Science practices at both Sears Holdings &amp; Seagate Technology</li>
         </ul>
 
-        <p>
-          In his work as a data scientist and strategy specialist, Ed leverages rich experience
-          in business strategy as well as superior quantitative/analytical and
-          leadership/interpersonal skills. Across his professional experiences, he's
-          established a proven record of generating and implementing creative ideas to bring
-          about measurable change.
-        </p>
+        <div class="dark-block">
+          <p>
+            In his work as a data scientist and strategy specialist, Ed leverages rich experience
+            in business strategy as well as superior quantitative/analytical and
+            leadership/interpersonal skills. Across his professional experiences, he's
+            established a proven record of generating and implementing creative ideas to bring
+            about measurable change.
+          </p>
 
-        <p>
-          As Vice President of Machine Learning at Nurx, Ed is building and leading a
-          new team of machine learning engineers and mathematicians who push the envelope
-          of AI technologies (e.g., machine learning; deep learning; Hadoop; Spark) to help
-          Nurx reinvent healthcare delivery.
-        </p>
+          <p>
+            An active member of the AI and data science communities, Ed
+            regularly presents at national and international conferences and workshops
+            and has been named a
+            <a class="tooltip tooltip-bottom"
+              href="http://tinyurl.com/TopDataPros"
+              target="_blank"
+              data-tooltip="@WileyEd >13k followers">
+              "Top Big Data Pro To Follow On Twitter"</a>.
+          </p>
 
-      </section>
-
-      <div class="divider"></div>
-
-      <section>
-        <h1>Professional Experience</h1>
-        <br>
-
-        <div class="timeline">
-
-          <!-- Nurx -->
-          <div class="timeline-item" id="timeline-1">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-1"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">Nurx</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>Vice President of Machine Learning</b><br>
-                      <small>Boulder, CO</small><br>
-                      <small><i>May 2019 – Present</i></small>
-                    </p>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- PenLink -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">PenLink</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>CIO &amp; Chief Data Scientist | Innovation,
-                        Data Science, &amp; Artificial Intelligence
-                      </b><br>
-                      <small>Boulder, CO</small><br>
-                      <small><i>Mar 2016 – May 2019</i></small>
-                    </p>
-                      At PenLink I built and led a newly-formed team of engineers and
-                      mathematicians who push the envelope of AI, data science,
-                      and visualization technologies (e.g., machine learning; deep learning;
-                      Spark; Hadoop) to support PenLink's best-in-class software offerings.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Data Science Leaders Network -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">Data Science Leaders Network</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Workshop Leader: Designing and Building a Data Science Team
-                      </b><br>
-                      <small>Boston, MA</small><br>
-                      <small><i>Aug 2018</i></small>
-                    </p>
-                      Creating and growing a successful team in the current competitive hiring
-                      market can be a challenge. Learn valuable hiring strategies from creating
-                      the perfect job description right through creating career pathways to
-                      keep your data scientists engaged.
-
-                      This session also explores best practices for evaluating talent and
-                      offer interesting interviews techniques when under time constraints.
-                      You will equally have the opportunity to compare different team models to
-                      establish the best fit for your company.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4x24 Executive Leadership Program - Big Data/Analytics -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">4x24 Executive Leadership Program - Big Data/Analytics</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Workshop Keynote
-                      </b><br>
-                      <small>Washington D.C.</small><br>
-                      <small><i>May 2016</i></small>
-                    </p>
-                    The 4x24 Big Data/Analytics group engages executives-of-consequence in a
-                    thoughtful dialogue on the direction and impact of federal government
-                    policies and procedures. Additionally , we address the role of the private
-                    sector in shaping these actions.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Sears Holdings Corporation -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">Sears Holdings Corporation</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Chief Data Scientist; DVP, Pricing | Data Science & Artificial Intelligence
-                      </b><br>
-                      <small>Chicago, IL</small><br>
-                      <small><i>2015 - 2016</i></small>
-                    </p>
-                    As Chief Data Scientist I built and led a newly-formed team focused on
-                    developing production-scale solutions to identify and capture
-                    $100M+ margin enhancing opportunities in the areas of pricing, offers
-                    and other appropriate sales and marketing instruments. We used methods
-                    of modern day artificial intelligence – e.g., machine learning, Bayesian
-                    simulation (MCMC), in-memory/distributed computing (Spark; Hadoop) – to
-                    overcome the limitations of quantitative approaches traditionally
-                    employed in pricing and marketing. As leader of this group I was charged
-                    with not only working with Sears' senior executive team (including CEO) to
-                    communicate our vision and strategy, but also identifying, recruiting, and
-                    retaining the data science talent critical to supporting this major initiative.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Seagate Technology -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">Seagate Technology</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Senior Engineering Manager - Big Data Analytics & Data Science
-                      </b><br>
-                      <small>Chicago, IL</small><br>
-                      <small><i>2013 - 2015</i></small>
-                    </p>
-                    As the leader of Seagate's Big Data Analytics initiative, I built and
-                    led a team of highly trained data scientists, engineers, and
-                    researchers to push the envelope of Big Data Analytics (e.g., machine learning;
-                    deep learning), primarily related to next-generation Cloud technologies
-                    (Hadoop; Spark). In this role I served as strategist, subject matter expert
-                    and external spokesperson for this newly-formed initiative within Seagate’s
-                    Data Center Operations group.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- University of Colorado at Boulder -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">University of Colorado at Boulder</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Chair and Assistant Professor: Quantitative Methods
-                        (Research & Evaluation Methodology Program)
-                      </b><br>
-                      <small>Boulder, CO</small><br>
-                      <small><i>Aug 2004 – Aug 2011</i></small>
-                    </p>
-                    Teaching and research in basic and advanced statistical methods.
-                    Published 75+ articles &amp; presentations.
-                    Chaired two and served on four national professional committees.
-                    Advised five state departments of education.
-                    Regularly taught five courses:
-                    <ol>
-                      <li>Quantitative Methods in Educational Research I</li>
-                      <li>Basic Statistical Methods</li>
-                      <li>Latent Variable and Structural Equation Modeling</li>
-                      <li>Multi-Level (Hierarchical) Statistical Modeling (Longitudinal Data Analysis)</li>
-                      <li>Advanced Topics in Applied Statistics (Logistic Regression, Local Regression Modeling)</li>
-                    </ol>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- McKinsey & Company -->
-          <div class="timeline-item" id="timeline-2">
-            <div class="timeline-left">
-              <a class="timeline-icon icon-lg" href="#timeline-2"></a>
-            </div>
-            <div class="timeline-content">
-              <div class="tile">
-                <div class="tile-content">
-                  <p class="tile-subtitle h2">McKinsey &amp; Company</p>
-                  <p class="tile-title">
-                    <p class="h5">
-                      <b>
-                        Senior Associate (Analytics, Pricing, & Portfolio/Risk Strategy Expert)
-                      </b><br>
-                      <small>San Francisco, CA</small><br>
-                      <small><i>Aug 2001 – Dec 2004</i></small>
-                    </p>
-                    Client engagements primarily in (1) institutional investment; (2) professional services; and (3) public sector:
-                    (1) Served North American and European institutional investor clients (from C-level executives to individual portfolio managers) on issues of policy, organization/governance, and investment/risk strategy.
-                    (2) Served global professional services clients on issues of pricing, organization, and operations.
-                    (3) Served state (California), local (Bay Area), and public and private educational organizations on issues of strategy.
-                    Functional expertise includes pricing and strategy; risk-based pricing; alternative investment (private equity, venture capital, hedge funds, and natural resources); real options asset pricing models
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
+          <p>
+            As Vice President of Machine Learning at Nurx, Ed is building and leading a
+            new team of machine learning engineers and mathematicians who push the envelope
+            of AI technologies (e.g., machine learning; deep learning; Hadoop; Spark) to help
+            Nurx reinvent healthcare delivery.
+          </p>
         </div>
 
       </section>
 
-      <section>
-        <h1>Education</h1>
+      <section class="experience" id="experience">
+        <div class="experience-filter">
+          <h2 class="text-uppercase py-2 text-center">Professional Experience</h2>
+          <br>
+
+          <div class="timeline">
+
+            <!-- Nurx -->
+            <div class="timeline-item" id="timeline-1">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-1"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">Nurx</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>Vice President of Machine Learning</b><br>
+                        <small>Boulder, CO</small><br>
+                        <small><i>May 2019 – Present</i></small>
+                      </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PenLink -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">PenLink</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>CIO &amp; Chief Data Scientist | Innovation,
+                          Data Science, &amp; Artificial Intelligence
+                        </b><br>
+                        <small>Boulder, CO</small><br>
+                        <small><i>Mar 2016 – May 2019</i></small>
+                      </p>
+                        At PenLink I built and led a newly-formed team of engineers and
+                        mathematicians who push the envelope of AI, data science,
+                        and visualization technologies (e.g., machine learning; deep learning;
+                        Spark; Hadoop) to support PenLink's best-in-class software offerings.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Science Leaders Network -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">Data Science Leaders Network</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Workshop Leader: Designing and Building a Data Science Team
+                        </b><br>
+                        <small>Boston, MA</small><br>
+                        <small><i>Aug 2018</i></small>
+                      </p>
+                        Creating and growing a successful team in the current competitive hiring
+                        market can be a challenge. Learn valuable hiring strategies from creating
+                        the perfect job description right through creating career pathways to
+                        keep your data scientists engaged.
+
+                        This session also explores best practices for evaluating talent and
+                        offer interesting interviews techniques when under time constraints.
+                        You will equally have the opportunity to compare different team models to
+                        establish the best fit for your company.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4x24 Executive Leadership Program - Big Data/Analytics -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">4x24 Executive Leadership Program - Big Data/Analytics</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Workshop Keynote
+                        </b><br>
+                        <small>Washington D.C.</small><br>
+                        <small><i>May 2016</i></small>
+                      </p>
+                      The 4x24 Big Data/Analytics group engages executives-of-consequence in a
+                      thoughtful dialogue on the direction and impact of federal government
+                      policies and procedures. Additionally , we address the role of the private
+                      sector in shaping these actions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sears Holdings Corporation -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">Sears Holdings Corporation</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Chief Data Scientist; DVP, Pricing | Data Science & Artificial Intelligence
+                        </b><br>
+                        <small>Chicago, IL</small><br>
+                        <small><i>2015 - 2016</i></small>
+                      </p>
+                      As Chief Data Scientist I built and led a newly-formed team focused on
+                      developing production-scale solutions to identify and capture
+                      $100M+ margin enhancing opportunities in the areas of pricing, offers
+                      and other appropriate sales and marketing instruments. We used methods
+                      of modern day artificial intelligence – e.g., machine learning, Bayesian
+                      simulation (MCMC), in-memory/distributed computing (Spark; Hadoop) – to
+                      overcome the limitations of quantitative approaches traditionally
+                      employed in pricing and marketing. As leader of this group I was charged
+                      with not only working with Sears' senior executive team (including CEO) to
+                      communicate our vision and strategy, but also identifying, recruiting, and
+                      retaining the data science talent critical to supporting this major initiative.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Seagate Technology -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">Seagate Technology</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Senior Engineering Manager - Big Data Analytics & Data Science
+                        </b><br>
+                        <small>Chicago, IL</small><br>
+                        <small><i>2013 - 2015</i></small>
+                      </p>
+                      As the leader of Seagate's Big Data Analytics initiative, I built and
+                      led a team of highly trained data scientists, engineers, and
+                      researchers to push the envelope of Big Data Analytics (e.g., machine learning;
+                      deep learning), primarily related to next-generation Cloud technologies
+                      (Hadoop; Spark). In this role I served as strategist, subject matter expert
+                      and external spokesperson for this newly-formed initiative within Seagate’s
+                      Data Center Operations group.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- University of Colorado at Boulder -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">University of Colorado at Boulder</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Chair and Assistant Professor: Quantitative Methods
+                          (Research & Evaluation Methodology Program)
+                        </b><br>
+                        <small>Boulder, CO</small><br>
+                        <small><i>Aug 2004 – Aug 2011</i></small>
+                      </p>
+                      Teaching and research in basic and advanced statistical methods.
+                      Published 75+ articles &amp; presentations.
+                      Chaired two and served on four national professional committees.
+                      Advised five state departments of education.
+                      Regularly taught five courses:
+                      <ol>
+                        <li>Quantitative Methods in Educational Research I</li>
+                        <li>Basic Statistical Methods</li>
+                        <li>Latent Variable and Structural Equation Modeling</li>
+                        <li>Multi-Level (Hierarchical) Statistical Modeling (Longitudinal Data Analysis)</li>
+                        <li>Advanced Topics in Applied Statistics (Logistic Regression, Local Regression Modeling)</li>
+                      </ol>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- McKinsey & Company -->
+            <div class="timeline-item" id="timeline-2">
+              <div class="timeline-left">
+                <a class="timeline-icon icon-lg" href="#timeline-2"></a>
+              </div>
+              <div class="timeline-content">
+                <div class="tile">
+                  <div class="tile-content">
+                    <p class="tile-subtitle h2">McKinsey &amp; Company</p>
+                    <p class="tile-title">
+                      <p class="h5">
+                        <b>
+                          Senior Associate (Analytics, Pricing, & Portfolio/Risk Strategy Expert)
+                        </b><br>
+                        <small>San Francisco, CA</small><br>
+                        <small><i>Aug 2001 – Dec 2004</i></small>
+                      </p>
+                      Client engagements primarily in (1) institutional investment; (2) professional services; and (3) public sector:
+                      (1) Served North American and European institutional investor clients (from C-level executives to individual portfolio managers) on issues of policy, organization/governance, and investment/risk strategy.
+                      (2) Served global professional services clients on issues of pricing, organization, and operations.
+                      (3) Served state (California), local (Bay Area), and public and private educational organizations on issues of strategy.
+                      Functional expertise includes pricing and strategy; risk-based pricing; alternative investment (private equity, venture capital, hedge funds, and natural resources); real options asset pricing models
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content" id="education">
+        <h2 class="text-uppercase py-2 text-center">Education</h2>
         <br>
 
         <dl>
           <dt class="h3 text-bold">Stanford University<dt>
           <dd>
-            <p class="h5">PhD Psychological Studies</p>
+            <p class="text-italic">PhD Psychological Studies</p>
             Activities and Societies: First student in my school to be awarded the 3-year Stanford President's Full-Tuition Graduate Fellowship in Science and Engineering. Received "Outstanding" teaching ratings in eight basic and advanced statistics courses. One of three Stanford students named to Stanford Trustees' Committees on Research and Graduate Studies. Invited speaker for Inaugural Celebration of Stanford President's Graduate Fellowship in Science/Engineering
             Dissertation: Bootstrap Strategies for Variance Component Estimation: Analytical
             and Empirical Results. Dissertation Committee: Richard Shavelson, Edward Haertel,
@@ -431,21 +400,30 @@
               <li>Social Science Research Methods (MA course)</li>
             </ol>
           </dd>
+
+          <div class="spacer"></div>
+
           <dt class="h3 text-bold">Stanford University<dt>
           <dd>
-            <p class="h5">M.S. Statistics</p>
+            <p class="text-italic">M.S. Statistics</p>
             Activities and Societies: Completed doctoral courses in applied statistics and statistical
             learning in the course of earning my M.S. under advisor Ingram Olkin.
           </dd>
+
+          <div class="spacer"></div>
+
           <dt class="h3 text-bold">University of Nebraska - Lincoln<dt>
           <dd>
-            <p class="h5">MA Quantitative and Qualitative Methods</p>
+            <p class="text-italic">MA Quantitative and Qualitative Methods</p>
             Activities and Societies: Awarded "High Honors" in passing Master's Comprehesive Exam.
             Thesis: Validity of intercollegiate athletic eligibility standards as predictors of student athlete collegiate success. Invited by Nebraska football coach Tom Osborne to prepare thesis findings for inclusion in Big XII deliberations regarding eligibility of 'partial qualifiers' .
           </dd>
+
+          <div class="spacer"></div>
+
           <dt class="h3 text-bold">University of Nebraska - Lincoln<dt>
           <dd>
-            <p class="h5">B.A.Mathematics (Minors in English and Psychology)</p>
+            <p class="text-italic">B.A. Mathematics (Minors in English and Psychology)</p>
             Activities and Societies: President of 135-member fraternity.
             Awarded Regents Scholarship; Eastman Honorary Mathematics Fellowship;
             and U.S. Department of Education's Robert C Byrd Fellowship.
@@ -458,11 +436,10 @@
 
       </section>
 
-      <div class="divider text-center" data-content="&#10042;"></div>
 
-      <section>
-        <h1>Contact</h1>
-        <br>
+    <section class="dark footer" id="contact">
+      <div class="text-center">
+        <h2 class="text-uppercase">Contact</h2>
         <p>
           Contact Ed <a href="mailto:ed@edwiley.com">(ed@edwiley.com)</a>
           to schedule time to talk about building data
@@ -470,9 +447,8 @@
           science, or leading data science teams (especially for those without a data
           science background).
         </p>
-      </section>
-
-    </main>
+      </div>
+    </section>
 
   </body>
 </html>

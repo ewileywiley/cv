@@ -119,6 +119,16 @@ dl dd {
   line-height:70px;
   margin-bottom: 10px;
 }
+.intro-header-pre {
+  font-size: 75px;
+}
+.intro-header-sub {
+  font-size: 65px;
+  text-transform: none;
+}
+.upper {
+  text-transform: uppercase;
+}
 
 .contact-btn {
   height: initial !important;
@@ -190,7 +200,32 @@ dl dd {
 }
 
 @media screen and (max-width: 475px) {
+  .hero {
+    background-position-x: 60%;
+  }
   .navbar-section a.btn.btn-link {
     display: none;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  section.header {
+    margin: 1rem;
+  }
+  .intro-header {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .intro-header-pre {
+    font-size: 35px;
+  }
+  .intro-header-sub {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    background-position-y: 20%;
   }
 }

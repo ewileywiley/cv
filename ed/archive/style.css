@@ -1,0 +1,231 @@
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+body {
+  font-size: 1rem;
+}
+section.header {
+  margin: 2rem;
+}
+section.content {
+  margin: 4rem;
+}
+section.dark {
+  background-color: #324158;
+  color: #fff;
+}
+a {
+  color: #36cffe !important;
+}
+a.active, a:active, a:focus, a:hover {
+  color: #36cffe !important;
+  cursor: pointer;
+}
+dl dd {
+  font-size: 18px;
+}
+
+.pt-1 {
+  padding-top: 1rem !important;
+}
+.pb-1 {
+  padding-bottom: 1rem !important;
+}
+.pt-2 {
+  padding-top: 2rem !important;
+}
+.pb-2 {
+  padding-bottom: 2rem !important;
+}
+.spacer {
+  margin: 2rem 0;
+}
+
+.btn {
+  border: 0;
+  color: #324158;
+}
+
+.btn.active, .btn:active,
+.btn:focus, .btn:hover {
+  background: #29374b !important;
+  border-color: transparent;
+  color: #fff !important;
+}
+
+.bg-primary {
+  background: #324158 !important;
+  color: #fff;
+}
+
+.tile .tile-subtitle, .tile .tile-title {
+  line-height: 2rem !important;
+}
+
+.text-primary {
+  color: #324158 !important;
+}
+
+.hero {
+  background-image: url("./img/ed-blur.jpg");
+  background-size: cover !important;
+  background-repeat: none !important;
+  resize: both;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+.hero-filter {
+  width: 100%;
+  height: 100%;
+  background: rgba(115, 123, 134, 0.5);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.timeline .timeline-item .timeline-icon.icon-lg {
+  background: #36cffe !important;
+}
+.timeline .timeline-item::before {
+  background: #36cffe !important;
+}
+.timeline-paragraph {
+  font-size: 18px;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+.navbar-section {
+  margin: 1rem;
+}
+.navbar-section a.btn.btn-link {
+  color: #fff !important;
+}
+.navbar-section a.btn.btn-link:hover {
+  color: #fff !important;
+}
+
+.intro {
+  font-size: 25px;
+  font-weight: 300;
+  color:#fff;
+}
+.intro-header {
+  text-transform: uppercase;
+  font-size:95px;
+  font-weight:900;
+  color:#fff;
+  line-height:70px;
+  margin-bottom: 10px;
+}
+.intro-header-pre {
+  font-size: 75px;
+}
+.intro-header-sub {
+  font-size: 65px;
+  text-transform: none;
+}
+.upper {
+  text-transform: uppercase;
+}
+
+.contact-btn {
+  height: initial !important;
+  padding: 0.5rem 0.8rem !important;
+}
+.contact-btn-text {
+  margin-right: 8px;
+}
+
+.tags {
+  padding: 3rem 0;
+}
+.tags span {
+  padding: 0 2rem;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.dark-block {
+  background-color: #324158;
+  color: #fff;
+  padding: 3rem 3rem 2rem 3rem;
+  font-weight: 100;
+  margin: 3rem 2rem;
+}
+
+.experience {
+  background-image: url("https://images.unsplash.com/photo-1505764761634-1d77b57e1966?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80");
+  background-size: cover !important;
+  background-repeat: none !important;
+  resize: both;
+  color: #fff;
+}
+.experience-filter {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 65, 88, 0.8);
+  padding: 4rem 5rem;
+}
+
+.footer {
+  margin: 0;
+  padding: 3rem 3rem 2rem 3rem;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 750px) {
+  .hero {
+    background-position-x: 50%;
+  }
+  .contact-btn-text {
+    display: none;
+  }
+  .navbar-section a {
+    font-size: 15px; !important;
+  }
+  section.header {
+    margin: 1rem 2rem;
+  }
+  section.content {
+    margin: 4rem 1rem;
+  }
+  .dark-block {
+    margin: 3rem 1rem
+  }
+  .experience-filter {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hero {
+    background-position-x: 60%;
+  }
+  .navbar-section a.btn.btn-link {
+    display: none;
+  }
+  .intro {
+    font-size: 20px;
+  }
+  section.header {
+    margin: 1rem;
+  }
+  .intro-header {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .intro-header-pre {
+    font-size: 35px;
+  }
+  .intro-header-sub {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    background-position-y: 20%;
+  }
+}

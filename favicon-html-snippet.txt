@@ -1,0 +1,13 @@
+<!-- Recommended favicon links -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-circled-ew-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-circled-ew-16x16.png">
+<link rel="icon" href="favicon-circled-ew.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-circled-ew-180x180.png">
+
+<!-- Alternate simplified monogram option -->
+<!--
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-monogram-ew-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-monogram-ew-16x16.png">
+<link rel="icon" href="favicon-monogram-ew.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-monogram-ew-180x180.png">
+-->

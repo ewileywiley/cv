@@ -1,15 +1,11 @@
-Hosting-ready package
+Favicon set created from the uploaded EW logo.
 
-Contents:
-- index.html
-- assets/ed-wiley-headshot.png
-- Ed_Wiley_Resume.pdf
+Included:
+- Circled EW version (closest to your LinkedIn mark)
+- Monogram-only EW version (cleaner at tiny browser-tab sizes)
 
-How to host:
-1. Upload the full folder contents to any static host.
-2. Keep the assets folder in the same relative location as index.html.
-3. The resume download link expects Ed_Wiley_Resume.pdf to remain beside index.html.
+Recommendation:
+- Use the circled version for consistency
+- Switch to the monogram-only version if the circle feels too delicate in a small tab
 
-Notes:
-- Headshot display size has been reduced substantially versus the prior concept build.
-- Section copy has been rewritten to speak directly to recruiters, boards, CEOs, and other target audiences rather than explaining the site to Ed.
+Files are ready for a static website.

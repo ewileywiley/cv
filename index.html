@@ -1,328 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta name="twitter:card" content="summary"/>
-	<meta name="twitter:title" content="Ed Wiley, PhD"/>
-	<meta name="twitter:description" content="Senior executive with over 23 years of building, leading, and advising world-class machine learning, AI, and data science teams at companies at stages from startup to Fortune 50." />
-	<meta name="twitter:image" content=""/>
-	<meta name="twitter:site" content="@EdWileyPhD"/>
-	<meta name="twitter:creator" content="@EdWileyPhD"/>
-	<meta property="og:title" content="Ed Wiley, PhD"/>
-	<meta property="og:site_name" content="Ed Wiley, PhD"/>
-	<meta property="og:url" content="https://edwiley.com"/>
-	<meta property="og:description" content="Senior executive with over 24 years of building, leading, and advising world-class machine learning, AI, and data science teams at companies at stages from startup to Fortune 50."/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:image" content=""/>
-	<meta content="Senior executive with over 21 years of building, leading, and advising world-class machine learning, AI, and data science teams at companies at stages from startup to Fortune 50." property="og:description">
-	<meta content="website" property="og:type">
-	<meta content="" property="og:image">
-	<title>Ed Wiley, MS, MA, PhD</title>
-	<meta content="#ffffff" name="theme-color">
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ed Wiley | Senior AI, Data & Engineering Executive</title>
+  <meta name="description" content="Executive website for Ed Wiley, PhD — Stanford-trained, McKinsey-honed operator who builds and transforms AI, data, analytics, and engineering organizations." />
+  <style>
+    :root {
+      --bg: #08111d;
+      --bg2: #0e1c2b;
+      --surface: rgba(255,255,255,0.06);
+      --surface-2: rgba(255,255,255,0.08);
+      --border: rgba(255,255,255,0.10);
+      --text: #edf2f7;
+      --muted: #a8b5c4;
+      --accent: #93c5fd;
+      --accent-2: #67e8f9;
+      --ink: #0a0f14;
+      --gold: #d6b36f;
+      --max: 1220px;
+      --shadow: 0 20px 60px rgba(0,0,0,0.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(103,232,249,0.18), transparent 28%),
+        radial-gradient(circle at top left, rgba(147,197,253,0.16), transparent 32%),
+        linear-gradient(180deg, #08111d 0%, #091522 22%, #0a1521 48%, #0e1824 100%);
+      line-height: 1.55;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    .topbar { position: sticky; top: 0; z-index: 30; backdrop-filter: blur(18px); background: rgba(8, 17, 29, 0.82); border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 78px; }
+    .brand { display: flex; align-items: center; gap: 14px; font-weight: 700; letter-spacing: 0.01em; }
+    .brand-mark { width: 44px; height: 44px; border-radius: 14px; display: grid; place-items: center; font-size: 0.95rem; font-weight: 800; background: linear-gradient(135deg, rgba(147,197,253,0.95), rgba(103,232,249,0.95)); color: #07111b; box-shadow: 0 10px 28px rgba(103,232,249,0.15); }
+    .nav-links { display: flex; align-items: center; gap: 22px; color: var(--muted); font-size: 0.95rem; flex-wrap: wrap; justify-content: flex-end; }
+    .nav-links a:hover { color: var(--text); }
+    .hero { padding: 72px 0 28px; }
+    .hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 34px; align-items: stretch; }
+    .panel { background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04)); border: 1px solid var(--border); border-radius: 28px; box-shadow: var(--shadow); }
+    .hero-copy { padding: 42px; position: relative; overflow: hidden; }
+    .hero-copy::after { content: ""; position: absolute; inset: auto -20% -30% auto; width: 340px; height: 340px; border-radius: 50%; background: radial-gradient(circle, rgba(147,197,253,0.16), transparent 65%); pointer-events: none; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-2); margin-bottom: 18px; font-weight: 700; }
+    .eyebrow::before { content: ""; width: 42px; height: 1px; background: linear-gradient(90deg, transparent, var(--accent-2)); }
+    h1 { font-size: clamp(2.4rem, 5vw, 4.7rem); line-height: 0.98; margin: 0 0 18px; letter-spacing: -0.04em; }
+    .lead { font-size: 1.14rem; color: var(--muted); max-width: 52rem; margin: 0 0 26px; }
+    .hero-photo { padding: 22px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 18px; }
+    .hero-photo img { width: 50%; max-width: 300px; min-width: 220px; height: auto; border-radius: 22px; border: 1px solid rgba(255,255,255,0.10); box-shadow: 0 16px 40px rgba(0,0,0,0.28); }
+    .photo-note { width: min(100%, 360px); padding: 18px; border-radius: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); color: var(--muted); font-size: 0.96rem; }
+    .metric-row, .proof-grid, .bio-grid, .signal-grid, .thought-grid { display: grid; gap: 18px; }
+    .metric-row { grid-template-columns: repeat(5, 1fr); margin: 34px 0 0; }
+    .metric { padding: 18px; border-radius: 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); }
+    .metric strong { display: block; font-size: 1.4rem; letter-spacing: -0.03em; margin-bottom: 6px; }
+    .metric span { display: block; color: var(--muted); font-size: 0.92rem; }
+    .cta-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; padding: 0 18px; border-radius: 999px; font-weight: 700; transition: transform 0.2s ease, opacity 0.2s ease; }
+    .btn:hover { transform: translateY(-1px); opacity: 0.95; }
+    .btn-primary { color: var(--ink); background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 14px 34px rgba(103,232,249,0.18); }
+    .btn-secondary { color: var(--text); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.10); }
+    section { padding: 34px 0; }
+    .section-head { margin-bottom: 22px; max-width: 62rem; }
+    .kicker { display: inline-block; margin-bottom: 10px; color: var(--gold); text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.16em; font-weight: 700; }
+    h2 { margin: 0 0 12px; font-size: clamp(1.8rem, 3vw, 3rem); letter-spacing: -0.03em; line-height: 1.04; }
+    .section-head p, .card p, .timeline p, .bio-copy p, .contact-card p { color: var(--muted); }
+    .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .signal-grid, .thought-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card { padding: 24px; border-radius: 24px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03)); border: 1px solid rgba(255,255,255,0.08); box-shadow: var(--shadow); }
+    .numberline { color: var(--accent-2); font-size: 0.83rem; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700; margin-bottom: 10px; }
+    .card h3 { margin: 0 0 10px; font-size: 1.28rem; line-height: 1.14; letter-spacing: -0.02em; }
+    ul.clean { margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
+    ul.clean li + li { margin-top: 8px; }
+    .bio-grid { grid-template-columns: 0.9fr 1.1fr; align-items: start; }
+    .bio-side { padding: 24px; border-radius: 24px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08); position: sticky; top: 102px; }
+    .bio-side .minihead { font-size: 0.8rem; color: var(--accent-2); text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700; margin-bottom: 12px; }
+    .timeline { padding: 24px; border-radius: 24px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); margin-bottom: 18px; }
+    .timeline h3 { margin: 0 0 8px; font-size: 1.18rem; }
+    .timeline .role { color: var(--text); font-weight: 700; margin-bottom: 6px; }
+    .timeline .period { color: var(--accent); font-size: 0.92rem; margin-bottom: 10px; }
+    .cta-banner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 20px; padding: 28px; border-radius: 28px; background: linear-gradient(135deg, rgba(147,197,253,0.12), rgba(103,232,249,0.08)); border: 1px solid rgba(255,255,255,0.09); box-shadow: var(--shadow); }
+    .contact-card { padding: 24px; border-radius: 22px; background: rgba(8,17,29,0.52); border: 1px solid rgba(255,255,255,0.08); }
+    .line { display: grid; grid-template-columns: 110px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+    .line:last-child { border-bottom: 0; padding-bottom: 0; }
+    .label { color: var(--muted); font-size: 0.92rem; }
+    .value { font-weight: 600; }
+    footer { padding: 34px 0 54px; color: var(--muted); font-size: 0.92rem; }
+    @media (max-width: 1100px) {
+      .hero-grid, .bio-grid, .cta-banner { grid-template-columns: 1fr; }
+      .metric-row { grid-template-columns: repeat(2, 1fr); }
+      .signal-grid, .thought-grid { grid-template-columns: 1fr 1fr; }
+      .proof-grid { grid-template-columns: 1fr; }
+      .bio-side { position: static; }
+      .hero-photo img { width: 40%; max-width: 280px; }
+    }
+    @media (max-width: 720px) {
+      .container { width: min(var(--max), calc(100% - 26px)); }
+      .nav { align-items: flex-start; padding: 14px 0; }
+      .nav-links { gap: 14px; font-size: 0.9rem; }
+      .hero-copy { padding: 28px; }
+      .metric-row, .signal-grid, .thought-grid { grid-template-columns: 1fr; }
+      .line { grid-template-columns: 1fr; }
+      .hero-photo img { width: 68%; min-width: 0; }
+    }
+  </style>
 </head>
 <body>
-	<div class="body2">
-		<div id="home"></div>
-		<nav>
-			<div class="logo">
-				<a class="smoothScroll" href="#home">Ed Wiley, MS, PhD</a>
-			</div>
-			<div class="menu-icon">
-				<i class="fa fa-bars fa-2x"></i>
-			</div>
-			<div class="menu">
-				<ul>
-					<li>
-						<a class="smoothScroll" href="#abt">ABOUT</a>
-					</li>
-					<li>
-						<a class="smoothScroll" href="#exp">EXPERIENCE</a>
-					</li>
-					<li>
-						<a class="smoothScroll" href="#edu">EDUCATION</a>
-					</li>
-					<li>
-						<a class="smoothScroll" href="#soc">CONTACT</a>
-					</li>
-				</ul>
-			</div>
-			<div class="cta">
-				<a href="mailto:ed@edwiley.com" target="blank">E-MAIL</a>
-			</div>
-		</nav><!-- particles.js container -->
-		<div id="particles-js">
-		</div>
-				<section class="about container" data-aos="fade-down" data-aos-duration="1000">
-					<br>
-					<p class="vcenter">Meet Ed!<br>
-					<br>
-					Senior executive with over 20 years of building, leading, and advising world-class machine learning, AI, and data science teams at companies at stages from startup to Fortune 50.</p><br>
-					<img alt="Screenshot of The Platform" class="center" src="./img/edw.jpg"> 
-				</section>
-		<div id="abt"></div><br>
-		<div class="titles">DATA SCIENCE CONSULTING &nbsp;&nbsp; // &nbsp;&nbsp;  ENTERPRISE AI STRATEGY DEVELOPMENT &nbsp;&nbsp; // &nbsp;&nbsp; COACHING, SPEAKING, & WORKSHOPS</div>
-		<div class="container1 card-container" data-aos="fade-up" data-aos-duration="1500">
-			<div class="card" id="card-1">
-				<div class="card__img">
-					<i class="fas fa-brain"></i>
-				</div>
- 				<div class="card__heading">
-					Expertise
-				</div>
-				<div class="card__description">
-					<a>Ed is a Stanford-educated data scientist and McKinsey-trained strategy specialist who leverages rich experience in business as well as superior quantitative/analytical and leadership/interpersonal skills. Ed has established a proven record of putting in place the People, Platform, and Processes key to a world-class AI and data science function. His experience spans across business functions for clients representing a variety of industry sectors.</a>
-				</div>
-			</div>
-			<div class="card" id="card-3">
-				<div class="card__img">
-					<i class="fas fa-users"></i>
-				</div>
-
-
-
-
-
-
-
-
-
-
-
-				<div class="card__heading">
-					Leadership
-				</div>
-				<div class="card__description">
-					<p>A recognized thought leader in AI and data science, Ed created and delivered Udacity's <i>"Data Science for Business Leaders"</i> executive program.</p>  <br>
-
-					<p>	Ed has collected his learnings about building AI practices in the forthcoming (July, 2023) book <i>"AI: From Buzzword to Business Function. A Leader's Playbook for Bringing AI, Machine Learning, and Data Science to your Business"</i></p>
-				</div>
-			</div>
-			<div class="card" id="card-2">
-				<div class="card__img">
-					<i class="fas fa-bullhorn"></i>
-				</div>
-				<div class="card__heading">
-					Recognition
-				</div>
-				<div class="card__description">
-					<a>As an active member of the AI and data science communities, Ed regularly presents at national and international conferences and workshops.<br>
-					<br>
-					Ed has also been named:
-					<ul style="list-style-type:square;">
-						<li><a href="https://onalytica.com/blog/posts/whos-who-in-data-science-and-machine-learning/" id="link" target="blank">"Top Data Science & Machine Learning Amplifier"</a></li>
-						<li><a href="https://onalytica.com/blog/posts/whos-who-in-data-science-and-machine-learning/" id="link" target="blank">"Key Opinion Leader in Data Science & Machine Learning"</a></li>
-						<li><a href="https://aitimejournal.com/data-scientists/" id="link" target="blank">"Inspring Data Scientist"</a></li>
-						<li><a href="https://www.informationweek.com/big-data-analytics/10-more-big-data-pros-to-follow-on-twitter?slide=7" id="link" target="blank">"Top Big Data Pro To Follow On Twitter"</a></li>
-					</ul>
-					
-				</div>
-			</div>
-		</div>
-		<h1 data-aos="zoom-in" data-aos-duration="1000" id="exp">REPRESENTATIVE ENGAGEMENTS</h1>
-		<div class="bgarea">
-			<div class="blur">
-		<div class="exp" data-aos="zoom-in-up" data-aos-duration="2000">
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>RETAIL</h3>
-					<span style="font-size:24px; line-height: 120%";>Data and Analytics strategy for a $6B footwear and apparel retailer</span> <br> <br> <br> <br>
-					<!-- <span id="size">Boulder, CO</span> <span id="italic">May 2019 – Present</span> -->
-					<!-- <p>I lead Data and Machine Learning for Nurx, a $100M+ digital health startup (YC W16) backed by Kleiner Perkins and Union Square Ventures. I am charged with developing Nurx's data and machine learning strategy and vision and putting in place the organizational structure necessary to execute on that strategy. My day-to-day tasks include a balance of collaborating with Nurx's other senior executives, recruiting and developing top machine learning and data talent, and translating our business opportunities and objectives into solutions based in data and machine learning applications.</p> -->
-				</div>
-			</div>
-			<div class="timeline-block timeline-block-left">
-				<!-- <div class="marker"></div> -->
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>FINANCIAL SERVICES</h3>
-					<span style="font-size:24px; line-height: 120%";>Data and Analytics strategy for a $1B financial services conglomerate</span> <br> <br> <br> <br>
-					<!-- <span id="size">Washington, DC</span> <span id="italic">May 2016</span> -->
-					<!-- <p>The 4x24 Big Data/Analytics group engages executives-of-consequence in a thoughtful dialogue on the direction and impact of federal government policies and procedures. Additionally , we address the role of the private sector in shaping these actions.</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>HEALTHCARE</h3>
-					<span style="font-size:24px; line-height: 120%";>Machine Learning strategy for a telehealth unicorn </span><br> <br> <br> <br>
-					<!-- <span id="size">Boston, MA</span> <span id="italic">Aug 2018</span> -->
-					<!-- <p>Creating and growing a successful team in the current competitive hiring market can be a challenge. Learn valuable hiring strategies from creating the perfect job description right through creating career pathways to keep your data scientists engaged. This session also explores best practices for evaluating talent and offer interesting interviews techniques when under time constraints. You will equally have the opportunity to compare different team models to establish the best fit for your company.</p> -->
-				</div>
-			</div>
-				<div class="timeline-block timeline-block-left">
-				<!-- <div class="marker"></div> -->
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>TELECOMMUNICATIONS</h3>
-					<span style="font-size:24px; line-height: 120%";>Machine Learning strategy for a $23B national telecommunications company</span><br> <br> <br> <br>
-					<!-- <span id="size">Boston, MA</span> <span id="italic">Aug 2018</span> -->
-					<!-- <p>Creating and growing a successful team in the current competitive hiring market can be a challenge. Learn valuable hiring strategies from creating the perfect job description right through creating career pathways to keep your data scientists engaged. This session also explores best practices for evaluating talent and offer interesting interviews techniques when under time constraints. You will equally have the opportunity to compare different team models to establish the best fit for your company.</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>CONSUMER PACKAGED GOODS</h3>
-					<span style="font-size:24px; line-height: 120%";>BI & data governance strategy for a $5B consumer products and agricultural producer</span><br> <br> <br> <br>
-					<!-- <span id="size">Boulder, CO</span> <span id="italic">Mar 2016 – May 2019</span> -->
-					<!-- <p>At PenLink I built and led a newly-formed team of engineers and mathematicians who push the envelope of AI, data science, and visualization technologies (e.g., machine learning; deep learning; Spark; Hadoop) to support PenLink's best-in-class software offerings.</p> -->
-				</div>
-				<!-- <div class="marker"></div> -->
-			</div>
-			<div class="timeline-block timeline-block-left">
-				<!-- <div class="marker"></div> -->
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>INDUSTRIALS</h3>
-					<span style="font-size:24px; line-height: 120%";>Machine Learning strategy for a $40B international manufacturing leader</span> <br> <br> <br> <br>
-					<!-- <span id="size">Chicago, IL</span> <span id="italic">2015-2016</span> -->
-					<!-- <p>As Chief Data Scientist I built and led a newly-formed team focused on developing production-scale solutions to identify and capture $100M+ margin enhancing opportunities in the areas of pricing, offers and other appropriate sales and marketing instruments. We used methods of modern day artificial intelligence – e.g., machine learning, Bayesian simulation (MCMC), in-memory/distributed computing (Spark; Hadoop) – to overcome the limitations of quantitative approaches traditionally employed in pricing and marketing. As leader of this group I was charged with not only working with Sears' senior executive team (including CEO) to communicate our vision and strategy, but also identifying, recruiting, and retaining the data science talent critical to supporting this major initiative.</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>BUSINESS SERVICES</h3>
-					<span style="font-size:24px; line-height: 120%";>CEO advisory on Machine Learning strategy for $3.5B logistics and ecommerce company</span> <br> <br> <br> <br>
-
-					<!-- <span id="size">Chicago, IL</span> <span id="italic">2013-2015</span> -->
-					<!-- <p>As the leader of Seagate's Big Data Analytics initiative, I built and led a team of highly trained data scientists, engineers, and researchers to push the envelope of Big Data Analytics (e.g., machine learning; deep learning), primarily related to next-generation Cloud technologies (Hadoop; Spark). In this role I served as strategist, subject matter expert and external spokesperson for this newly-formed initiative within Seagate’s Data Center Operations group.</p> -->
-				</div>
-				<!-- <div class="marker"></div> -->
-			</div>
-			<div class="timeline-block timeline-block-left">
-				<!-- <div class="marker"></div> -->
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>MANUFACTURING AND COMPUTER HARDWARE</h3>
-					<span style="font-size:24px; line-height: 120%";>Big Data Analytics and Machine Learning strategy for a $10B computer hardware manufacturing </span> <br> <br> <br> <br>
-					<!-- <span id="size">Boulder, CO</span> <span id="italic">Aug 2004 - Aug 2011</span> -->
-					<!-- <p>Teaching and research in basic and advanced statistical methods. Published 75+ articles & presentations. Chaired two and served on four national professional committees. Advised five state departments of education. Regularly taught five courses:<br> -->
-					<!-- <br> -->
-					<!-- <strong>1)</strong> Quantitative Methods in Educational Research I<br> -->
-<!-- 					<strong>2)</strong> Basic Statistical Methods<br>
-					<strong>3)</strong> Latent Variable and Structural Equation Modeling<br>
-					<strong>4)</strong> Multi-Level (Hierarchical) Statistical Modeling (Longitudinal Data Analysis)<br>
-					<strong>5)</strong> Advanced Topics in Applied Statistics (Logistic Regression, Local Regression Modeling)</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>PROFESSIONAL SERVICES</h3>
-					<span style="font-size:24px; line-height: 120%";>Pricing strategy for $10B professional services firm</span> <br> <br> <br> <br>
-					<!-- <span id="size"; >San Francisco, CA</span> <span id="italic">Aug 2001 - Dec 2004</span> -->
-					<!-- <p>Client engagements primarily in (1) institutional investment; (2) professional services; and (3) public sector: (1) Served North American and European institutional investor clients (from C-level executives to individual portfolio managers) on issues of policy, organization/governance, and investment/risk strategy. (2) Served global professional services clients on issues of pricing, organization, and operations. (3) Served state (California), local (Bay Area), and public and private educational organizations on issues of strategy. Functional expertise includes pricing and strategy; risk-based pricing; alternative investment (private equity, venture capital, hedge funds, and natural resources); real options asset pricing models</p> -->
-				</div>
-				<!-- <div class="marker"></div> -->
-			</div>
-		</div>
-	</div>
-		</div>
- -->
-
- 		<h1 id="edu">EDUCATION</h1>
-		<div class="exp" data-aos="zoom-in-up" data-aos-duration="2000">
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>Stanford University</h3><span style="font-size:24px; line-height: 120%">PhD Psychological Studies (Statistics)</span> <br> <br> <br> <br>
-					<!-- <p>Activities and Societies: First student in my school to be awarded the 3-year Stanford President's Full-Tuition Graduate Fellowship in Science and Engineering. Received "Outstanding" teaching ratings in eight basic and advanced statistics courses. One of three Stanford students named to Stanford Trustees' Committees on Research and Graduate Studies. Invited speaker for Inaugural Celebration of Stanford President's Graduate Fellowship in Science/Engineering Dissertation: Bootstrap Strategies for Variance Component Estimation: Analytical and Empirical Results. Dissertation Committee: Richard Shavelson, Edward Haertel, Bradley Efron, Kenji Hakuta, and Ewart Thomas. Dissertation study established new algorithms to estimate variance components and standard errors. Study mathematically demonstrated bias in bootstrap estimation of variance components, accuracy of which was demonstrated via Monte Carlo simulation. Study solved problem that had puzzled researchers for over 13 years. Dissertation won both national award (NCME's Outstanding Dissertation Award), as well as $20,000 Stanford fellowship. Taught/co-taught seven courses:<br> -->
-					<!-- <br>
-					<strong>1)</strong>Hierarchical Linear Models (PhD seminar)<br>
-					<strong>2)</strong>Analysis of Variance (PhD course)<br>
-					<strong>3)</strong>Research Design & Methodology Doctoral Seminar<br>
-					<strong>4)</strong>Quant Methods Doctoral Seminar<br>
-					<strong>5)</strong>Introduction to Research: Quant/Qual Methods (PhD seminar)<br>
-					<strong>6)</strong>Principles of Regression (PhD course)<br>
-					<strong>7)</strong>Social Science Research Methods (MA course)</p> -->
-				</div>
-			</div>
-			<div class="timeline-block timeline-block-left">
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>Stanford University</h3><span style="font-size:24px; line-height: 120%">MS Statistics </span> <br> <br> <br> <br>
-					<!-- <p>Activities and Societies: Completed doctoral courses in applied statistics and statistical learning in the course of earning my M.S. under advisor Ingram Olkin.</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-			<div class="timeline-block timeline-block-right">
-				<div class="marker"></div>
-				<div class="timeline-content" data-aos="fade-up-left" data-aos-duration="1500">
-					<h3>University of Nebraska - Lincoln</h3><span style="font-size:24px; line-height: 120%">MA Quantitative and Qualitative Methods</span> <br> <br> <br> <br>
-					<!-- <p>Activities and Societies: Awarded "High Honors" in passing Master's Comprehesive Exam. Thesis: Validity of intercollegiate athletic eligibility standards as predictors of student athlete collegiate success. Invited by Nebraska football coach Tom Osborne to prepare thesis findings for inclusion in Big XII deliberations regarding eligibility of 'partial qualifiers' .</p> -->
-				</div>
-			</div>
-			<div class="timeline-block timeline-block-left">
-				<div class="timeline-content" data-aos="fade-up-right" data-aos-duration="1500">
-					<h3>University of Nebraska - Lincoln</h3><span style="font-size:24px; line-height: 120%">BA Mathematics (Minors in English and Psychology)</span> <br> <br> <br> <br>
-					<!-- <p>Activities and Societies: President of 135-member fraternity. Awarded Regents Scholarship; Eastman Honorary Mathematics Fellowship; and U.S. Department of Education's Robert C Byrd Fellowship. Named to 13-member senior honorary (Chancellor's Society of Innocents) for outstanding scholarship, leadership, and service. Elected 1993 University of Nebraska Homecoming King by student body of 25,000-student campus. Trained and managed two teams of 26 student orientation leaders.</p> -->
-				</div>
-				<div class="marker"></div>
-			</div>
-		</div>
-		</div>
-		<div class="bgarea">
-			<div class="blur">
-		<div class="middle" data-aos="zoom-out" data-aos-duration="1500">
-			<h1 data-aos="zoom-out" data-aos-duration="2000" id="soc">CONTACT</h1>
-			<p>Reach out below to schedule time to talk about building and/or leading AI and data science teams, opportunities for improving business outcomes with AI & data science, or how best to apply AI, machine learning, and data science to your business. <br>
-			<!-- <span id="italic">(especially for those without a data science background)</span></p> -->
-			<div id='contact'>
-				<div data-aos="zoom-in-down" data-aos-duration="2500">
-					<div class='links'>
-						<a href='mailto:ed@edwiley.com' target='_blank'>
-						<div>
-							<span></span> <span></span> <span></span> <span></span> <span><i class="far fa-paper-plane"></i></span>
-						</div></a> <a href='https://www.linkedin.com/in/edwileyphd/' target='_blank'>
-						<div>
-							<span></span> <span></span> <span></span> <span></span> <span><i class="fab fa-linkedin"></i></span>
-						</div></a> <a href='https://twitter.com/wileyed/' target='_blank'>
-						<div>
-							<span></span> <span></span> <span></span> <span></span> <span><i class="fab fa-twitter"></i></span>
-						</div></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="ftrbg" data-aos="fade-in" data-aos-duration="2500">
-			<a>DESIGN BY</a><br>
-			<br>
-			<a href="https://samocki.com/" target="blank"><img alt="Samocki Logo" src="https://samocki.com/me/img/logo.png"></a>
-		</div>
-		</div>
-		</div>
-	</div>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
-	</script> 
-	<script src="./js/script.js">
-	</script> 
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
-	</script> 
-	<script src="./js/particles.js">
-	</script> 
-	<script src="js/app.js">
-	</script> 
-	<script>
-	      AOS.init({
-	       duration: 1500,
-	      })
-	</script> 
-	<script>
-	      $(function() {
-	          $(window).on("scroll", function() {
-	              if($(window).scrollTop() > 50) {
-	                  $(".nav").addClass("active");
-	              } else {
-	                 $(".nav").removeClass("active");
-	              }
-	          });
-	      });
-	</script>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-mark">EW</span>
+        <span>Ed Wiley, PhD</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#impact">Impact</a>
+        <a href="#bio">Executive Bio</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#thought">Thought Leadership</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="panel hero-copy">
+          <div class="eyebrow">Senior AI, Data & Engineering Executive</div>
+          <h1>Builds and transforms AI, data, analytics, and engineering organizations into durable business capability.</h1>
+          <p class="lead">
+            Ed Wiley is a Stanford-trained quantitative leader and McKinsey-honed strategist with a record spanning Fortune 50, large private enterprise, public-sector innovation, and venture-backed startups. He is most often brought in when organizations have invested materially in AI or data but need sharper operating models, stronger leadership, and measurable commercial outcomes.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contact">Start a conversation</a>
+            <a class="btn btn-secondary" href="#bio">Read executive bio</a>
+            <a class="btn btn-secondary" href="Ed_Wiley_Resume.pdf" download>Download resume</a>
+          </div>
+          <div class="metric-row">
+            <div class="metric"><strong>$150M+</strong><span>projected margin opportunity at Sears/Kmart</span></div>
+            <div class="metric"><strong>$7M+</strong><span>annual cost takeout at Delaware North</span></div>
+            <div class="metric"><strong>35%</strong><span>budget reduction in enterprise data and analytics</span></div>
+            <div class="metric"><strong>5x faster</strong><span>processing at 85% lower compute cost</span></div>
+            <div class="metric"><strong>&gt;96%</strong><span>faster DEA lead identification</span></div>
+          </div>
+        </div>
+        <div class="panel hero-photo">
+          <img src="assets/ed-wiley-headshot.png" alt="Portrait of Ed Wiley in a blue suit standing in front of a staircase." />
+          <div class="photo-note">
+            Senior operator for moments that require more than technical fluency: building teams, resetting underperforming functions, gaining executive alignment, and turning AI ambition into execution.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="impact">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Selected Impact</span>
+          <h2>Repeated delivery across enterprise transformation, startup execution, and AI operating-model design.</h2>
+          <p>
+            Across sectors and company stages, Ed’s work follows a familiar pattern: clarify where value will come from, reshape the organization around that reality, and then drive the technical and operational changes required to capture it.
+          </p>
+        </div>
+        <div class="proof-grid">
+          <article class="card">
+            <div class="numberline">Enterprise transformation</div>
+            <h3>Delaware North — enterprise data and analytics reset for a $4.5B hospitality company</h3>
+            <p>Took over a 75-person function after six years and more than $50M of prior investment had not produced sufficient business value. Re-architected the operating model, flattened management, rebuilt the platform, and reoriented the function toward delivery and adoption.</p>
+            <ul class="clean">
+              <li>Executed more than $7M in annual cost takeout and reduced budget by 35%.</li>
+              <li>Enabled a platform rebuild that increased processing speed 5x at 85% lower compute cost.</li>
+              <li>Cut roughly $4M in labor spend in a major business unit and launched AI acceleration with 20 business leaders.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="numberline">Commercial AI at scale</div>
+            <h3>Sears Holdings — machine learning-based pricing and promotions at Fortune 50 scale</h3>
+            <p>Built the company’s first centralized data science organization and partnered directly with the CEO and business leaders to establish a new price-optimization capability across product lines.</p>
+            <ul class="clean">
+              <li>Scaled the team from one analyst to 41 data scientists and ML engineers.</li>
+              <li>Pilot categories delivered margin gains of 2.54%, 2.23%, and 6.48%.</li>
+              <li>Full deployment was projected to drive more than $150M in incremental margin.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="numberline">Startup CTO execution</div>
+            <h3>Opsis Health — rebuilt product, engineering, and ML after a failed two-year build</h3>
+            <p>Stepped in after multiple contractors had consumed significant time and capital with little progress. Rebuilt the team, architecture, and delivery motion to put the business on a credible operating footing.</p>
+            <ul class="clean">
+              <li>Cut more than $8M in annual contractor spend.</li>
+              <li>Re-architected the product from a monolith to cloud-native microservices.</li>
+              <li>Delivered the first product to market in less than four months.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="numberline">Operational ML in healthcare</div>
+            <h3>Nurx — first production ML capability for a high-growth digital health company</h3>
+            <p>Built the company’s ML function and delivered NLP-based routing and prioritization models that improved clinical operations while preserving care quality during rapid growth.</p>
+            <ul class="clean">
+              <li>Created ML infrastructure for production use cases including routing and prescription optimization.</li>
+              <li>Reduced provider response times by an average of 60%.</li>
+              <li>Established the cloud architecture that later hosted subsequent ML models.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="numberline">Public-sector mission impact</div>
+            <h3>PenLink / DEA — analytics platform that dramatically accelerated investigative lead generation</h3>
+            <p>Led innovation and analytics efforts for law-enforcement software supporting agencies including DEA, FBI, US Secret Service, and US Marshals.</p>
+            <ul class="clean">
+              <li>Built a cloud-based analytics solution that reduced DEA lead identification time from days to minutes.</li>
+              <li>Brought PenLink’s first SaaS product to market in under six months.</li>
+              <li>Acquired more than 200 federal, state, and local agency users in the first year.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="numberline">GenAI value capture</div>
+            <h3>Enterprise advisory work — GenAI productivity, org design, and operating-model decisions</h3>
+            <p>Advises CFOs, CTOs, CHROs, and presidents on where GenAI can create value, how to organize for delivery, and how to avoid implementation paths that consume budget without creating durable capability.</p>
+            <ul class="clean">
+              <li>Identified approximately $50M annualized hard-cost opportunity for a large financial services organization.</li>
+              <li>Helped leaders prioritize use cases, architecture choices, and phased implementation paths.</li>
+              <li>Supported AI and data transformations that contributed to DTC e-commerce growth of more than 100% and domestic retail growth above 20%.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="bio">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Executive Bio</span>
+          <h2>A leadership profile built at the intersection of technical depth, operating responsibility, and commercial judgment.</h2>
+          <p>Ed brings together Stanford PhD-level quantitative rigor, McKinsey strategy formation, and repeated operating experience inside organizations that needed AI, data, and engineering to become real business functions rather than isolated technical efforts.</p>
+        </div>
+        <div class="bio-grid">
+          <aside class="bio-side">
+            <div class="minihead">What he brings</div>
+            <p>Executive maturity in settings that require both credibility and change leadership: building new functions, repairing underperforming ones, and guiding senior leaders through consequential decisions on talent, governance, architecture, and sequencing.</p>
+            <div class="minihead" style="margin-top:18px;">Most relevant strengths</div>
+            <ul class="clean">
+              <li>Building AI, data, and engineering organizations from scratch</li>
+              <li>Resetting functions after large prior investments have stalled</li>
+              <li>Connecting technical architecture choices to measurable economics</li>
+              <li>Leading through organizational design, talent, governance, and execution discipline</li>
+            </ul>
+          </aside>
+          <div class="bio-copy">
+            <article class="timeline"><div class="role">Senior Vice President, Data & Analytics — Delaware North</div><div class="period">2024–2025</div><p>Led a 75-person data, analytics, and labor-management organization for a $4.5B hospitality company; drove cost takeout, platform modernization, AI acceleration, and operating-model redesign.</p></article>
+            <article class="timeline"><div class="role">Founder / Principal — Ed Wiley Ventures</div><div class="period">2008–Present</div><p>Advises C-suite leaders across multibillion-dollar enterprises on AI, analytics, data strategy, operating model, organizational design, GenAI value capture, and implementation sequencing.</p></article>
+            <article class="timeline"><div class="role">Chief Technology Officer — Opsis Health; Enveda Biosciences</div><div class="period">2020–2023</div><p>Led engineering, machine learning, and product rebuilds in venture-backed health and biotech settings, including architecture redesign, team assembly, operating cadence, and fundraising support.</p></article>
+            <article class="timeline"><div class="role">Vice President, Data & Machine Learning — Nurx</div><div class="period">2019–2020</div><p>Built and led the company’s machine learning function to improve operational throughput and patient response times while scaling care delivery for a fast-growing digital health business.</p></article>
+            <article class="timeline"><div class="role">Chief Innovation Officer / Chief Data Scientist — PenLink</div><div class="period">2016–2019</div><p>Led innovation, data science, and cloud transformation for software serving leading federal, state, and local law-enforcement agencies.</p></article>
+            <article class="timeline"><div class="role">Chief Data Scientist, Pricing & Promotions — Sears Holdings</div><div class="period">2015–2016</div><p>Built a 41-person data science organization and launched machine learning-based price and promotion optimization in direct partnership with enterprise leadership.</p></article>
+            <article class="timeline"><div class="role">Head of Big Data Analytics — Seagate Technology</div><div class="period">2013–2015</div><p>Built Seagate’s first Big Data Analytics team and helped position next-generation cloud and analytics capabilities as strategic enterprise assets.</p></article>
+            <article class="timeline"><div class="role">Chair & Assistant Professor — University of Colorado Boulder</div><div class="period">2004–2011</div><p>Chaired a doctoral program, led faculty and students, taught advanced quantitative methods, and built a substantial body of research, publication, and advisory work.</p></article>
+            <article class="timeline"><div class="role">Senior Strategy Associate — McKinsey & Company</div><div class="period">2001–2004</div><p>Advised clients on strategy, innovation, pricing, organization, and investment questions—forming the commercial and strategic instincts that continue to shape executive leadership style.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="leadership">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Leadership</span>
+          <h2>Ed is the kind of executive who can enter a complex situation, earn trust quickly, and move an organization from AI ambition to operating reality.</h2>
+          <p>He has done that with CEOs, CFOs, BU presidents, startup founders, long-tenured pricing leaders, engineering organizations, and public-sector stakeholders. The pattern is consistent: build the right team, simplify the decision path, make the architecture choices that fit the business, and create a model that can scale.</p>
+        </div>
+        <div class="signal-grid">
+          <article class="card"><div class="numberline">Range</div><h3>Comfortable across Fortune 50, large private enterprise, public sector, and startup environments</h3><p>That breadth matters because it signals judgment that transfers across industry, scale, and organizational maturity rather than succeeding in only one context.</p></article>
+          <article class="card"><div class="numberline">Team building</div><h3>Repeatedly recruits and organizes high-caliber technical teams</h3><p>From Sears to Seagate to venture-backed startups, he has repeatedly built teams capable of delivering when the company needs both execution speed and stronger technical standards.</p></article>
+          <article class="card"><div class="numberline">Stakeholder leadership</div><h3>Earns alignment from executives and skeptics alike</h3><p>His work often requires influencing leaders who are accountable for outcomes but cautious about change, then helping them commit to a practical path forward.</p></article>
+          <article class="card"><div class="numberline">Commercial focus</div><h3>Frames AI decisions through economics, not theater</h3><p>Cost takeout, margin expansion, throughput, labor efficiency, and organizational readiness are recurring themes across both operator and advisory work.</p></article>
+          <article class="card"><div class="numberline">Architecture and delivery</div><h3>Connects technical choices to execution reality</h3><p>Comfortable operating from LLM strategy and vendor selection down to cloud architecture, microservices decisions, and production machine-learning infrastructure.</p></article>
+          <article class="card"><div class="numberline">Executive presence</div><h3>Combines Stanford PhD-level rigor with McKinsey strategy fluency</h3><p>The result is a leader who can engage at board, C-suite, and technical levels without sacrificing either substance or commercial clarity.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="thought">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Thought Leadership</span>
+          <h2>His public voice reinforces what his operating record already shows: depth, range, and the ability to translate complexity into action.</h2>
+          <p>Executive education, speaking, academic leadership, and publication history matter here because they demonstrate not just expertise, but the ability to help other leaders understand what must change for AI to succeed inside the enterprise.</p>
+        </div>
+        <div class="thought-grid">
+          <article class="card"><div class="numberline">Executive education</div><h3>Creator of Udacity executive programs on data science and generative AI</h3><p>Developed and taught “Data Science for Business Leaders” and “Generative AI for Business Leaders,” translating complex technical concepts into implementation-oriented guidance for senior business audiences.</p></article>
+          <article class="card"><div class="numberline">Academic depth</div><h3>Stanford PhD/MS and former doctoral-program chair</h3><p>Brings unusual quantitative depth, teaching experience, and publication history, including leadership of a doctoral program and extensive research and advisory work.</p></article>
+          <article class="card"><div class="numberline">Field perspective</div><h3>Long view on both traditional AI and generative AI</h3><p>He has worked with AI as researcher, consultant, executive, professor, advisor, and founder—creating a perspective that is both historically informed and sharply practical.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="cta-banner">
+          <div>
+            <span class="kicker">Contact</span>
+            <h2>For executive searches, transformation mandates, board conversations, and high-stakes AI leadership roles.</h2>
+            <p>Ed is best suited to organizations that need more than a technical specialist: a senior leader who can align executives, build or reset capability, and create measurable business value from AI, data, analytics, and engineering.</p>
+            <div class="cta-row" style="margin-top:22px;">
+              <a class="btn btn-primary" href="mailto:ed@edwiley.ai">Email Ed</a>
+              <a class="btn btn-secondary" href="https://www.linkedin.com/in/EdWileyPhD" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn btn-secondary" href="Ed_Wiley_Resume.pdf" download>Download Resume</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="line"><span class="label">Email</span><span class="value"><a href="mailto:ed@edwiley.ai">ed@edwiley.ai</a></span></div>
+            <div class="line"><span class="label">Location</span><span class="value">Boulder, Colorado</span></div>
+            <div class="line"><span class="label">LinkedIn</span><span class="value"><a href="https://www.linkedin.com/in/EdWileyPhD" target="_blank" rel="noopener noreferrer">/in/EdWileyPhD</a></span></div>
+            <div class="line"><span class="label">Best fit</span><span class="value">CxO / SVP searches, operating advisory, AI transformation, board and investor conversations</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container">Hosting-ready executive website package for Ed Wiley, PhD.</div></footer>
 </body>
 </html>
